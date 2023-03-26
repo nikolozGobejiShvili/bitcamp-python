@@ -1,7 +1,18 @@
-text=input("input word :")
-text3=""
-for char in text:
-    if  char not in "aeiouAEIOU":
-        text3+=char
+def main():
+   text=input("input word :")
+   print(shorten(text))
+    
+
+
+def shorten(word):
+    text3=""
+
+    for char in word:
+      if  char not in "aeiouAEIOU":
+         text3+=char
                  
-print(text3)
+    return text3
+
+
+if __name__ == "__main__":
+    main()
